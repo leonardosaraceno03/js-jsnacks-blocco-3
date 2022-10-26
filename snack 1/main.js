@@ -5,18 +5,17 @@ let array = [];
 
 let somma = 0;
 
-
+let numero = 0;
 
 while (somma < 50){
-    let numero = parseInt(prompt("inserisci un numero"));
-    if(somma >= 50){
-        somma = somma + numero;
-    }else{
-        console.log(somma)
+    numero = parseInt(prompt("inserisci un numero"));
+    somma += numero;
+    if(somma < 50){
+        array.push(numero)
     }
-    
 }
-console.log(array)
 
-console.log(`la somma è ${somma}`)
-  
+
+let lastItem=array[array.length-1];
+ somma = somma - lastItem;
+ console.log(somma)
