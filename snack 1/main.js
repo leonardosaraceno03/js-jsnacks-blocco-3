@@ -9,8 +9,12 @@ let somma = 0;
 
 while (somma < 50){
     let numero = parseInt(prompt("inserisci un numero"));
-    somma += numero;
-    array.push(numero)
+    if(somma >= 50){
+        somma = somma + numero;
+    }else{
+        console.log(somma)
+    }
+    
 }
 console.log(array)
 
