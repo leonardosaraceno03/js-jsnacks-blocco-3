@@ -15,3 +15,4 @@ while(i < names.length ){
         console.log('iscriviti')
     }
 }
+//finito
